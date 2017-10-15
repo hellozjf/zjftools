@@ -1,13 +1,12 @@
-package com.hellozjf.tools;
+package com.hellozjf.zjftools;
 
 import java.io.File;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.apache.log4j.Logger;
 
 public class EclipseProject {
 	
-	private static final Log LOG = LogFactory.getLog(EclipseProject.class);
+    private static final Logger LOGGER = Logger.getLogger(EclipseProject.class);
 
 	public static String getProjectPath() throws Exception {
 		File directory = new File("");
@@ -16,6 +15,6 @@ public class EclipseProject {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		LOG.debug(getProjectPath());
+	    LOGGER.debug("hello world");
 	}
 }
