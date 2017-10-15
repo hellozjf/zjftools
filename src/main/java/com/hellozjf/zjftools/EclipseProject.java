@@ -16,5 +16,6 @@ public class EclipseProject {
 	
 	public static void main(String[] args) throws Exception {
 	    LOGGER.debug("hello world");
+	    LOGGER.info(getProjectPath());
 	}
 }
