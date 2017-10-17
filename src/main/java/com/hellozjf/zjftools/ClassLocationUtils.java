@@ -6,17 +6,8 @@ import java.net.URL;
 import java.security.CodeSource;
 import java.security.ProtectionDomain;
 
-/**
- * tools to find which jar does the class come from 
- * @author : chenxh
- * @date: 16-04-0
- */
 public class ClassLocationUtils {
-    /**
-     * find the location of the class come from
-     * @param cls
-     * @return
-     */
+    
     public static String where(final Class cls) {
         if (cls == null)throw new IllegalArgumentException("null input: cls");
         URL result = null;
@@ -48,7 +39,4 @@ public class ClassLocationUtils {
         return result.toString();
     }
 
-//    public static void main(String[] args) {
-//        System.out.println(ClassLocationUtils.where(java.util.List.class));
-//    }
 }

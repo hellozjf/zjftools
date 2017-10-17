@@ -14,8 +14,4 @@ public class EclipseProject {
         return courseFile;
 	}
 	
-//	public static void main(String[] args) throws Exception {
-//	    LOGGER.debug("hello world");
-//	    LOGGER.info(getProjectPath());
-//	}
 }
